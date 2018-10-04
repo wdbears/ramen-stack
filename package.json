@@ -1,0 +1,7 @@
+{
+  "name": "ramen_stack",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.4.0"
+  }
+}
