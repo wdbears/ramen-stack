@@ -1,2 +1,10 @@
 const withTypescript = require('@zeit/next-typescript')
-module.exports = withTypescript()
+const withTM = require('next-plugin-transpile-modules');
+
+module.exports = withTypescript(
+  withTM({
+    transpileModules: [
+      "@ramen_stack/test"
+    ]
+  })
+)

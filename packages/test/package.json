@@ -1,0 +1,6 @@
+{
+  "name": "@ramen_stack/test",
+  "version": "0.0.1",
+  "es-next": "index.ts",
+  "license": "MIT"
+}
