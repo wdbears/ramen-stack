@@ -5,16 +5,19 @@
   "devDependencies": {
     "@babel/preset-typescript": "^7.1.0",
     "backpack-core": "^0.8.0-0",
+    "nodemon": "^1.18.4",
     "ts-node": "^7.0.1",
     "typescript": "^3.1.1"
   },
   "dependencies": {
-    "@ramen_stack/test": "*"
+    "@ramen_stack/test": "*",
+    "graphql-yoga": "^1.16.2"
   },
   "scripts": {
-    "dev": "ts-node src/index.ts",
+    "dev": "nodemon --watch src --exec ts-node src/index.ts",
     "build": "tsc",
-    "start": "nodemon ./dist/server.js",
-    "prod": "npm run build && npm run start"
+    "start": "node ./dist/server.js",
+    "prod": "npm run build && npm run start",
+    "i": "lerna add --scope=@ramen_stack/api"
   }
 }
