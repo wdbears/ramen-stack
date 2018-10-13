@@ -17,7 +17,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "i": "lerna add --scope=@cheffam/web"
+    "i": "lerna add --scope=@ramen_stack/web"
   },
   "devDependencies": {
     "next-plugin-transpile-modules": "^0.1.2"
